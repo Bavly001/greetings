@@ -1,0 +1,63 @@
+body{
+      position: relative;
+      overflow: hidden;
+}
+@keyframes leftToRight {
+      0% {transform:translateX(0%);}
+      10% {transform:translateX(50%);}
+      20% {transform:translateX(100%);}
+      30% {transform:translateX(100%);}
+      40% {transform:translateX(50%);}
+      50% {transform:translateX(0%);}
+      60% {transform:translateX(-50%);}
+      70% {transform:translateX(-100%);}
+      80% {transform:translateX(-100%);}
+      90% {transform:translateX(-50%);}
+      100% {transform:translateX(0%);}
+}
+.animation{
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -2;
+      color: #47B5FF;
+      filter: blur(1.5px);
+      text-align: center;
+      opacity: 0.07;
+}
+.animation p{
+      margin: 12px 0 ;
+      animation: leftToRight 30s infinite ease-in-out;
+}
+.animation p:nth-child(2){
+      animation: leftToRight 32s infinite cubic-bezier(.39,.8,.93,.33) reverse;
+      font-size: 20px;
+}
+.animation p:nth-child(4){
+      animation: leftToRight 10s infinite cubic-bezier(.39,.8,.93,.33) reverse;
+      font-size: 20px;
+}
+.animation p:nth-child(15){
+      animation: leftToRight 15s infinite ease-out reverse;
+      font-size: 25px;
+}
+.animation p:nth-child(11){
+      animation: leftToRight 8s infinite ease-in-out reverse;
+      font-size: 22px;
+}
+.animation p:nth-child(7){
+      animation: leftToRight 20s infinite cubic-bezier(.39,.8,.93,.33) reverse;
+      font-size: 10px;
+}
+.animation p:nth-child(10){
+      animation: leftToRight 40s infinite cubic-bezier(.39,.8,.93,.33) reverse;
+}
+.animation p:nth-child(14){
+      animation: leftToRight 5s infinite cubic-bezier(.39,.8,.93,.33) reverse;
+}
+.animation p:nth-child(19){
+      animation: leftToRight 17s infinite cubic-bezier(.39,.8,.93,.33);
+}
+.animation p:nth-child(18){
+      animation: leftToRight 22s infinite cubic-bezier(.39,.8,.93,.33);
+}
